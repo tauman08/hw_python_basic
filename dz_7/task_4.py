@@ -10,7 +10,7 @@ def write_dict(dict_stat,size):
       write_dict(dict_stat, size)
 
 dict_stat = {100:0}
-for root, dirs, files in os.walk('с:\windows'):
+for root, dirs, files in os.walk(r'C:\Windows'):
    for file in files:
       size = int(os.stat(os.path.join(root,file)).st_size)
       write_dict(dict_stat, size)

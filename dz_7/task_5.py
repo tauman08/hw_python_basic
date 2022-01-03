@@ -22,7 +22,7 @@ def write_dict(dict_stat,name_file,size):
       write_dict(dict_stat,name_file,size)
 
 dict_stat = {100:(0,[])}
-for root, dirs, files in os.walk('E:\curs'):
+for root, dirs, files in os.walk(r'E:\course\GB'):
    for file in files:
       size = int(os.stat(os.path.join(root,file)).st_size)
       write_dict(dict_stat,file,size)
